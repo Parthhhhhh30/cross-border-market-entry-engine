@@ -1,5 +1,9 @@
 # Outpost application evidence
 
+**Live demo:** https://cross-border-market-entry-engine.streamlit.app/
+
+**Source:** https://github.com/Parthhhhhh30/cross-border-market-entry-engine
+
 ## Short project answer
 
 I built a cross-border market-entry decision engine for a hypothetical UK digital-services merchant. Instead of hiding a recommendation inside a weighted country score, it separates public market context from merchant-specific assumptions and models the operating economics directly: funnel conversion, payment approval, GMV, indirect-tax treatment, gross contribution, setup cost, break-even GMV and payback. The dashboard compares six markets and lets an operator change assumptions and immediately see how the decision changes, including downside/base/upside sensitivity. Public context is refreshed from World Bank data where available, while tax notes come from official EU and government sources.
@@ -31,7 +35,8 @@ Safe claims:
 - public World Bank data integration with fallback
 - official tax-context references
 - unit economics, break-even, payback and sensitivity
-- automated tests
+- automated tests and Streamlit runtime smoke test
+- public deployed dashboard
 
 Do not claim:
 - that the model determines legal/tax obligations
