@@ -1,5 +1,7 @@
 # Cross-Border Market Entry Decision Engine
 
+**Live demo:** https://cross-border-market-entry-engine.streamlit.app/
+
 A scenario-based market-entry model for a hypothetical UK digital-services merchant. The project is designed as strategy/operations evidence: it combines public market context with explicit merchant economics instead of producing a black-box country score.
 
 > Independent portfolio work. Not an official Outpost product, integration, pricing model, tax calculation or legal opinion.
@@ -70,6 +72,14 @@ See `ASSUMPTIONS.md` for the full boundary.
 
 Population, GDP per capita and internet adoption are useful context, but combining them with tax complexity, expected conversion, setup effort and fees into one arbitrary weighted score would hide judgement. This project keeps context visible and lets the scenario economics speak directly.
 
+## Quality checks
+
+The GitHub Actions workflow runs:
+
+- unit and scenario tests
+- Python compile checks
+- a Streamlit runtime smoke test that starts the app and checks its health endpoint
+
 ## Run locally
 
 ```bash
@@ -95,7 +105,7 @@ assumptions.csv         synthetic merchant demo assumptions
 ASSUMPTIONS.md          model boundary and formulas
 ARCHITECTURE.md         design / control rationale
 OUTPOST.md              application answer + demo script
-.github/workflows/      CI tests
+.github/workflows/      CI tests + runtime smoke test
 ```
 
 ## Sources
